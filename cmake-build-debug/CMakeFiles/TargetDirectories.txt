@@ -1,0 +1,3 @@
+C:/Users/andrii.baran/Desktop/CPPLabs/cmake-build-debug/CMakeFiles/CPPLabs.dir
+C:/Users/andrii.baran/Desktop/CPPLabs/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/andrii.baran/Desktop/CPPLabs/cmake-build-debug/CMakeFiles/rebuild_cache.dir
