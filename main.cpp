@@ -14,15 +14,18 @@ int main() {
 
     double x[7] = {545.45, 1078.23, 20.65, 30.12, 500.54, 14.1232, 15.12455};
 
+    //Lab 1 Task 1
     std::cout << "Lab 1 Task 1 \n\n";
     std::cout << "Calculate formula value : cos2 |x|+ 1,7(2,3x-5)/(1,1x +2)ctg3x\n";
     std::cout << "Calculating formula results: \n";
+
     for (int i = 0; i < 7; ++i) {
         std::cout << "Current input value " << x[i] << "\n";
         CalculateFormula(x[i]);
         std::cout << "\n";
     }
 
+    //Lab 1 Task 2
     std::cout << "Lab 1 Task 2 \n\n";
     std::cout << "Find triangular bisector and height:\n";
     std::cout << "Calculating triangular height B: \n";
@@ -34,6 +37,7 @@ int main() {
     //Lab 1 end
 
     //Lab 2 start
+    //Lab 2 Task 1
     std::cout << "LAB 2: \n\n";
 
     std::cout << "Lab 2 Task 1 \n";
@@ -77,7 +81,8 @@ int main() {
 
     Lab2Task1UserInput();
 
-    std::cout << "\n\nLab 2 Task 2 \n\n";
+    //Lab 2 Task 2
+    std::cout << "\n\nLab 2 Task 2\n\n";
     std::cout << "Find f(x,y) value according to table function expression \n";
     std::cout <<
               "\n    +-----+---+---+---+"
@@ -96,10 +101,20 @@ int main() {
         std::cout <<"\nParameters: [" << parameters[i][0] << "," << parameters[i][1] << "] Function value: " << GetFuncValue(parameters[i][0], parameters[i][1]);
     }
 
-    std::cout << "User input: \n";
+    std::cout << "\nUser input: \n";
 
     Lab2Task2UserInput();
 
     //Lab 2 end
+
+    //Lab 3 start
+
+    //Lab 3 Task 1
+
+    //Lab 3 Task 2
+
+    //Lab 3 Task 3
+
+    //Lab 3 end
     return 0;
 }
