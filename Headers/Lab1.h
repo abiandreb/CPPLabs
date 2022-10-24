@@ -7,7 +7,7 @@ double CalculateHeight(double A[2], double B[2], double C[2]);
 double CalculateBisector(double A[2], double B[2], double C[2]);
 double CalculateFormula(double x);
 
-//Returns cotangens value
+//Returns cotangent value
 double Ctg(double rad){
     return cos(rad) / sin(rad);
 }
