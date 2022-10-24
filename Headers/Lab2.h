@@ -123,3 +123,77 @@ void Lab2Task2UserInput()
 
     std::cout << "\nProceeding... ";
 }
+
+void RunLab2()
+{
+    //Lab 2 start
+    //Lab 2 Task 1
+    std::cout << "LAB 2: \n\n";
+
+    std::cout << "Lab 2 Task 1 \n";
+    std::cout << "Check if given point coordinates are in the figure plotted below:\n";
+
+    std::cout <<
+              "\n                                           ^"
+              "\n                                           |"
+              "\n                                         2 -"
+              "\n                                           |"
+              "\n                                           |"
+              "\n                                           |"
+              "\n                                           |"
+              "\n                                 .------ 1 - --------."
+              "\n                                 |         |         |"
+              "\n                                 |         |         |"
+              "\n                                 |         |         |"
+              "\n                                 |         |         |"
+              "\n                      -|---------|---------|---------|---------|->"
+              "\n                      -2       -1|        0|         1         2"
+              "\n                                 |         |"
+              "\n                                 |         |"
+              "\n                                 |         |"
+              "\n                                 `----- -1 -"
+              "\n                                           |"
+              "\n                                           |"
+              "\n                                           |"
+              "\n                                           |"
+              "\n                                        -2 -"
+              "\n                                           |\n\n";
+
+
+    float points[6][2] = {{1, 1}, {0, 0}, {1, -1}, {-1, -1}, {-1, 1}, {1, 2}};
+
+    std::cout << "Predefined values: \n";
+    for (int i = 0; i < 6 ; ++i) {
+        std::cout <<"\nPoint: [" << points[i][0] << "," << points[i][1] << "] is in figure: " << IsInFigure(points[i][0], points[i][1]);
+    }
+
+    std::cout << "\nUser input: \n";
+
+    Lab2Task1UserInput();
+
+    //Lab 2 Task 2
+    std::cout << "\n\nLab 2 Task 2\n\n";
+    std::cout << "Find f(x,y) value according to table function expression \n";
+    std::cout <<
+              "\n    +-----+---+---+---+"
+              "\n    | X/Y | 0 | 1 | 2 |"
+              "\n    +-----+---+---+---+"
+              "\n    |   0 | 2 | 1 | 1 |"
+              "\n    |   1 | 1 | 0 | 0 |"
+              "\n    |   2 | 2 | 1 | 2 |"
+              "\n    +-----+---+---+---+\n";
+
+    float parameters[5][2] = {{0,0}, {0, 1}, {1, 1}, {1, 2}, {3, 3}};
+
+    std::cout << "\nPredefined values: \n";
+
+    for (int i = 0; i < 5 ; ++i) {
+        std::cout <<"\nParameters: [" << parameters[i][0] << "," << parameters[i][1] << "] Function value: " << GetFuncValue(parameters[i][0], parameters[i][1]);
+    }
+
+    std::cout << "\nUser input: \n";
+
+    Lab2Task2UserInput();
+
+    //Lab 2 end
+}

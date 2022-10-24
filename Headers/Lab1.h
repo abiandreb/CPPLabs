@@ -56,4 +56,36 @@ double CalculateBisector(double A[2], double B[2], double C[2]){
     return bisectorC;
 }
 
+void RunLab1()
+{
+    //Lab 1 start
+    std::cout << "LAB 1: \n\n";
+    const int variant = 11;
+    double pointA[2] = {0.0, 0.0};
+    double pointB[2] = {variant, variant - 1};
+    double pointC[2] = {0 - variant, variant + 1};
 
+    double x[7] = {545.45, 1078.23, 20.65, 30.12, 500.54, 14.1232, 15.12455};
+
+    //Lab 1 Task 1
+    std::cout << "Lab 1 Task 1 \n\n";
+    std::cout << "Calculate formula value : cos2 |x|+ 1,7(2,3x-5)/(1,1x +2)ctg3x\n";
+    std::cout << "Calculating formula results: \n";
+
+    for (int i = 0; i < 7; ++i) {
+        std::cout << "Current input value " << x[i] << "\n";
+        CalculateFormula(x[i]);
+        std::cout << "\n";
+    }
+
+    //Lab 1 Task 2
+    std::cout << "Lab 1 Task 2 \n\n";
+    std::cout << "Find triangular bisector and height:\n";
+    std::cout << "Calculating triangular height B: \n";
+    CalculateHeight(pointA, pointB, pointC);
+
+    std::cout << "Calculating triangular bisector C: \n";
+    CalculateBisector(pointA, pointB, pointC);
+    std::cout << "LAB 1 end; \n\n";
+    //Lab 1 end
+}
