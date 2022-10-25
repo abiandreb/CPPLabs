@@ -52,18 +52,18 @@ void RunLab1()
     double pointB[2] = {variant, variant - 1};
     double pointC[2] = {0 - variant, variant + 1};
 
-    double x[5] = {M_PI/2, -M_PI/2, 3*M_PI/2, -3 * M_PI/2, 0};
+    double x[6] = {M_PI/2, -M_PI/2, 3*M_PI/2, -3 * M_PI/2, 0, M_PI/4};
 
     //Lab 1 Task 1
     std::cout << "Lab 1 Task 1 \n\n";
     std::cout << "Calculate formula value : cos2 |x| + (1,1x +2)ctg3x/1,7(2,3x-5)\n\n";
 
-    for (int i = 0; i < 5; ++i) {
+    for (int i = 0; i < 6; ++i) {
 
         double val = CalculateFormula(x[i]);
         if(isinf(val) or isnan(val))
         {
-            std::cout << "Current input value: " << i << " results as: [" << val << "] caused by division by zero or invalid cotangent expression\n";
+            std::cout << "Current input value: " << i << " results as: [" << val << "] caused by division by zero or invalid cotangent expression\n\n";
             continue;
         }
         std::cout << "Current input value " << x[i] << "\n";

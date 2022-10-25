@@ -47,7 +47,7 @@ bool IsInFigure(float pointX, float pointY)
     }
 
     return false;
-};
+}
 
 //Task 2
 
