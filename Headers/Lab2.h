@@ -76,7 +76,7 @@ int GetFuncValue(int x, int y)
     }
 }
 
-void Lab2Task1UserInput()
+void Task1UserInput()
 {
     bool runner = true;
 
@@ -95,12 +95,10 @@ void Lab2Task1UserInput()
         std::cout << "\nType '1' to enter value or '0' to proceed\n";
 
         std::cin >> runner;
-
-        std::cout << "\nProceeding... ";
     }
 }
 
-void Lab2Task2UserInput()
+void Task2UserInput()
 {
     bool runner = true;
 
@@ -120,8 +118,6 @@ void Lab2Task2UserInput()
 
         std::cin >> runner;
     }
-
-    std::cout << "\nProceeding... ";
 }
 
 void RunLab2()
@@ -160,16 +156,8 @@ void RunLab2()
               "\n                                           |\n\n";
 
 
-    float points[6][2] = {{1, 1}, {0, 0}, {1, -1}, {-1, -1}, {-1, 1}, {1, 2}};
 
-    std::cout << "Predefined values: \n";
-    for (int i = 0; i < 6 ; ++i) {
-        std::cout <<"\nPoint: [" << points[i][0] << "," << points[i][1] << "] is in figure: " << IsInFigure(points[i][0], points[i][1]);
-    }
-
-    std::cout << "\nUser input: \n";
-
-    Lab2Task1UserInput();
+    Task1UserInput();
 
     //Lab 2 Task 2
     std::cout << "\n\nLab 2 Task 2\n\n";
@@ -183,17 +171,7 @@ void RunLab2()
               "\n    |   2 | 2 | 1 | 2 |"
               "\n    +-----+---+---+---+\n";
 
-    float parameters[5][2] = {{0,0}, {0, 1}, {1, 1}, {1, 2}, {3, 3}};
-
-    std::cout << "\nPredefined values: \n";
-
-    for (int i = 0; i < 5 ; ++i) {
-        std::cout <<"\nParameters: [" << parameters[i][0] << "," << parameters[i][1] << "] Function value: " << GetFuncValue(parameters[i][0], parameters[i][1]);
-    }
-
-    std::cout << "\nUser input: \n";
-
-    Lab2Task2UserInput();
+    Task2UserInput();
 
     //Lab 2 end
 }
